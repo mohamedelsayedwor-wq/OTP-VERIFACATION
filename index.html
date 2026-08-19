@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>OTP Verification</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="otp-container">
+
+        <div class="otp-card">
+
+            <div class="icon">
+                <span>✉</span>
+            </div>
+
+            <h1>OTP Verification</h1>
+
+            <p class="description">
+                Enter the verification code sent to your phone
+            </p>
+
+
+            <!-- OTP Animation Area -->
+            <div class="otp-animation">
+
+                <!-- Lines -->
+                <div class="otp-line line-1"></div>
+                <div class="otp-line line-2"></div>
+                <div class="otp-line line-3"></div>
+
+
+                <!-- OTP Boxes -->
+                <div class="otp-inputs">
+
+                    <input type="text" maxlength="1" inputmode="numeric">
+
+                    <input type="text" maxlength="1" inputmode="numeric">
+
+                    <input type="text" maxlength="1" inputmode="numeric">
+
+                    <input type="text" maxlength="1" inputmode="numeric">
+
+                </div>
+
+            </div>
+
+
+            <button id="verifyBtn">
+                Verify
+            </button>
+
+
+            <p class="resend">
+                Didn't receive the code?
+                <button id="resendBtn">Resend</button>
+            </p>
+
+
+            <div id="message"></div>
+
+
+            <!-- Final Verified -->
+            <div class="verified-result">
+
+                <div class="big-check">
+                    ✓
+                </div>
+
+                <div class="big-verified">
+                    VERIFIED
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
